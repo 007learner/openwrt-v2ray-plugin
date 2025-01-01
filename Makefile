@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=v2ray-plugin
-PKG_VERSION:=5.17.1
+PKG_VERSION:=1.3.2
 PKG_RELEASE:=20240824
 PKG_MAINTAINER:=honwen <https://github.com/honwen>
 
@@ -40,7 +40,7 @@ ifeq ($(ARCH),arm)
 endif
 
 PKG_SOURCE:=v2ray-plugin-linux-$(PKG_ARCH)-v$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/teddysun/v2ray-plugin/releases/download/v$(PKG_VERSION)/
+PKG_SOURCE_URL:=https://github.com/shadowsocks/v2ray-plugin/releases/download/v$(PKG_VERSION)/
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_HASH:=skip
 
